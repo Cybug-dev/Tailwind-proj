@@ -1,9 +1,10 @@
 import { features } from "../constants";
+import Reveal from "./Reveal.jsx";
 
 const FeatureSection = () => {
   return (
     <div className="relative mt-20 min-h-[800px] px-4 sm:px-6">
-      <div className="text-center">
+      <Reveal className="text-center">
         <span className="bg-neutral-900 text-orange-500 rounded-full text-base sm:text-lg font-medium px-3 py-1 inline-block">
           Featured Features
         </span>
@@ -13,11 +14,11 @@ const FeatureSection = () => {
             your code
           </span>
         </h2>
-      </div>
+      </Reveal>
 
       <div className="flex flex-wrap mt-10 lg:mt-20 -mx-3">
         {features.map((feature, index) => (
-          <div key={index} className="w-full md:w-1/2 lg:w-1/3 p-3  flex">
+          <Reveal key={index} className="w-full md:w-1/2 lg:w-1/3 p-3 flex" delay={index * 80}>
             <div className="flex flex-col sm:flex-row w-full lg:py-15 p-8 bg-neutral-900 rounded-lg border border-transparent hover:border-neutral-800 hover:-translate-y-2 hover:shadow-2xl hover:shadow-orange-500/10 transition-all duration-300 ease-in-out group">
 
               <div className="flex h-10 w-10 shrink-0 bg-neutral-800 text-orange-700 group-hover:bg-orange-700 group-hover:text-neutral-900 justify-center items-center rounded-full transition-colors duration-300 mb-4 sm:mb-0 sm:mr-4">
@@ -30,7 +31,7 @@ const FeatureSection = () => {
                 <p className="text-neutral-500 text-sm leading-relaxed">{feature.description}</p>
               </div>
             </div>
-          </div>
+            </Reveal>
         ))}
       </div>
     </div>

@@ -1,17 +1,20 @@
 import { CheckCircle2 } from "lucide-react";
 import { pricingOptions } from "../constants";
+import Reveal from "./Reveal.jsx";
 
 const PricingSection = () => {
   return (
     <div className="mt-20 px-4 sm:px-6 max-w-7xl mx-auto">
-      <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center my-8 lg:my-12 tracking-wide font-medium text-white">
-        Pricing
-      </h2>
+      <Reveal>
+        <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center my-8 lg:my-12 tracking-wide font-medium text-white">
+          Pricing
+        </h2>
+      </Reveal>
       
       {/* Grid Layout Container */}
       <div className="flex flex-wrap -mx-2 justify-center">
         {pricingOptions.map((option, index) => (
-          <div key={index} className="w-full md:w-1/2 lg:w-1/3 p-3 flex">
+          <Reveal key={index} className="w-full md:w-1/2 lg:w-1/3 p-3 flex" delay={index * 100} direction="zoom">
             {/* Professional, clean card container */}
             <div className={`p-8 sm:p-10 border rounded-2xl w-full flex flex-col justify-between bg-neutral-900/40 relative ${
               option.title === "Pro" ? "border-orange-500/50 shadow-lg shadow-orange-500/5" : "border-neutral-800"
@@ -62,7 +65,7 @@ const PricingSection = () => {
               </div>
 
             </div>
-          </div>
+          </Reveal>
         ))}
       </div>
     </div>

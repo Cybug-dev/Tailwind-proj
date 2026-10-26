@@ -1,4 +1,5 @@
 import { resourcesLinks, platformLinks, communityLinks } from "../constants";
+import Reveal from "./Reveal.jsx";
 
 const Footer = () => {
   return (
@@ -7,7 +8,7 @@ const Footer = () => {
       <div className="py-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 lg:gap-8">
         
         {/* Column 1: Brand Anchor & Bio Description (Spans 2 columns on desktop to fill empty space) */}
-        <div className="lg:col-span-2 flex flex-col space-y-4 pr-0 lg:pr-8">
+        <Reveal className="lg:col-span-2 flex flex-col space-y-4 pr-0 lg:pr-8">
           <div className="flex items-center space-x-2">
             <div className="h-5 w-5 rounded bg-gradient-to-r from-orange-500 to-orange-700 flex items-center justify-center text-white text-xs font-bold" />
             <span className="text-lg font-semibold tracking-tight text-white">VirtualR</span>
@@ -15,10 +16,10 @@ const Footer = () => {
           <p className="text-sm text-neutral-400 leading-relaxed max-w-sm">
             Empowering developers with institutional-grade virtual build systems and seamless workflow management tools.
           </p>
-        </div>
+        </Reveal>
 
         {/* Column 2: Resources Links */}
-        <div className="flex flex-col">
+        <Reveal className="flex flex-col" delay={80}>
           <h4 className="text-xs font-bold tracking-wider text-neutral-200 uppercase mb-4">
             Resources
           </h4>
@@ -34,10 +35,10 @@ const Footer = () => {
               </li>
             ))}
           </ul>
-        </div>
+        </Reveal>
 
         {/* Column 3: Platform Links */}
-        <div className="flex flex-col">
+        <Reveal className="flex flex-col" delay={160}>
           <h4 className="text-xs font-bold tracking-wider text-neutral-200 uppercase mb-4">
             Platform
           </h4>
@@ -53,10 +54,10 @@ const Footer = () => {
               </li>
             ))}
           </ul>
-        </div>
+        </Reveal>
 
         {/* Column 4: Community Links */}
-        <div className="flex flex-col">
+        <Reveal className="flex flex-col" delay={240}>
           <h4 className="text-xs font-bold tracking-wider text-neutral-200 uppercase mb-4">
             Community
           </h4>
@@ -72,12 +73,12 @@ const Footer = () => {
               </li>
             ))}
           </ul>
-        </div>
+        </Reveal>
 
       </div>
 
       {/* Bottom Footer: Legal Layout */}
-      <div className="py-8 border-t border-neutral-900 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <Reveal className="py-8 border-t border-neutral-900 flex flex-col sm:flex-row items-center justify-between gap-4">
         <p className="text-xs text-neutral-500">
           &copy; {new Date().getFullYear()} VirtualR Inc. All rights reserved.
         </p>
@@ -85,7 +86,7 @@ const Footer = () => {
           <a href="#" className="hover:text-neutral-400 transition-colors duration-200">Privacy Policy</a>
           <a href="#" className="hover:text-neutral-400 transition-colors duration-200">Terms of Service</a>
         </div>
-      </div>
+      </Reveal>
     </footer>
   );
 };

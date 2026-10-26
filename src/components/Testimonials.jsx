@@ -1,16 +1,19 @@
 import { testimonials } from "../constants";
+import Reveal from "./Reveal.jsx";
 
 const Testimonials = () => {
   return (
     <div className="mt-20 px-4 sm:px-6 max-w-7xl mx-auto tracking-wide">
 
-      <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center my-10 lg:my-16 font-medium text-white">
-        What People are saying
-      </h2>
+      <Reveal>
+        <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center my-10 lg:my-16 font-medium text-white">
+          What People are saying
+        </h2>
+      </Reveal>
 
       <div className="flex flex-wrap -mx-3 justify-center">
         {testimonials.map((testimonial, index) => (
-          <div key={index} className="w-full md:w-1/2 lg:w-1/3 p-3 flex">
+          <Reveal key={index} className="w-full md:w-1/2 lg:w-1/3 p-3 flex" delay={index * 80}>
 
             <div className="bg-neutral-900 border border-neutral-800 rounded-2xl p-6 sm:p-8 flex flex-col justify-between w-full shadow-lg shadow-black/20 hover:border-neutral-700/60 transition-colors duration-200">
               
@@ -35,7 +38,7 @@ const Testimonials = () => {
               </div>
 
             </div>
-          </div>
+          </Reveal>
         ))}
       </div>
     </div>
