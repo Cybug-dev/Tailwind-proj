@@ -6,6 +6,7 @@ import FeatureSection from "./components/FeatureSection.jsx";
 import WorkFlow from "./components/WorkFlow.jsx";
 import PricingSection from "./components/PricingSection.jsx";
 import Testimonials from "./components/Testimonials.jsx";
+import FAQSection from "./components/FAQSection.jsx";
 import Footer from "./components/Footer.jsx";
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
            <WorkFlow />
            <PricingSection />
            <Testimonials />
+            <FAQSection />
            <Footer />
     </div>
   );
