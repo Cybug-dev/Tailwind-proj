@@ -8,6 +8,7 @@ import PricingSection from "./components/PricingSection.jsx";
 import Testimonials from "./components/Testimonials.jsx";
 import FAQSection from "./components/FAQSection.jsx";
 import Footer from "./components/Footer.jsx";
+import FinalCTABanner from "./components/FinalCTABanner.jsx";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
            <PricingSection />
            <Testimonials />
             <FAQSection />
+           <FinalCTABanner />
            <Footer />
     </div>
   );
