@@ -3,7 +3,7 @@ import Reveal from "./Reveal.jsx";
 
 const FeatureSection = () => {
   return (
-    <div className="relative mt-20 min-h-[800px] px-4 sm:px-6">
+    <section id="features" className="page-section relative mt-20 min-h-[800px] px-4 sm:px-6">
       <Reveal className="text-center">
         <span className="bg-neutral-900 text-orange-500 rounded-full text-base sm:text-lg font-medium px-3 py-1 inline-block">
           Featured Features
@@ -31,10 +31,10 @@ const FeatureSection = () => {
                 <p className="text-neutral-500 text-sm leading-relaxed">{feature.description}</p>
               </div>
             </div>
-            </Reveal>
+          </Reveal>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

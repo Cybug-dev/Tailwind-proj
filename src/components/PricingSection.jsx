@@ -4,7 +4,7 @@ import Reveal from "./Reveal.jsx";
 
 const PricingSection = () => {
   return (
-    <div className="mt-20 px-4 sm:px-6 max-w-7xl mx-auto">
+    <section id="pricing" className="page-section mt-20 px-4 sm:px-6 max-w-7xl mx-auto">
       <Reveal>
         <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center my-8 lg:my-12 tracking-wide font-medium text-white">
           Pricing
@@ -68,7 +68,7 @@ const PricingSection = () => {
           </Reveal>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -5,7 +5,7 @@ import Reveal from "./Reveal.jsx";
 
 const WorkFlow = () => {
   return (
-    <div className="mt-20 px-4 sm:px-6 max-w-7xl mx-auto">
+    <section id="workflow" className="page-section mt-20 px-4 sm:px-6 max-w-7xl mx-auto">
       {/* Heading - Fixed sm layout typo */}
       <Reveal>
         <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center mt-6 tracking-wide font-medium text-white">
@@ -53,7 +53,7 @@ const WorkFlow = () => {
         </div>
 
       </div>
-    </div>
+    </section>
   );
 };
 

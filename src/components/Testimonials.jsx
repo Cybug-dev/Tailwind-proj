@@ -3,7 +3,7 @@ import Reveal from "./Reveal.jsx";
 
 const Testimonials = () => {
   return (
-    <div className="mt-20 px-4 sm:px-6 max-w-7xl mx-auto tracking-wide">
+    <section id="testimonials" className="page-section mt-20 px-4 sm:px-6 max-w-7xl mx-auto tracking-wide">
 
       <Reveal>
         <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center my-10 lg:my-16 font-medium text-white">
@@ -41,7 +41,7 @@ const Testimonials = () => {
           </Reveal>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
